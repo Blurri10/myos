@@ -55,9 +55,3 @@ img {
     color: #FF4655;
 }
 
-#test {
-    position: absolute;
-    z-index: 1;
-    top: 75%;
-    text-align: center;
-}
