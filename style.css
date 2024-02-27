@@ -1,0 +1,63 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tanker', sans-serif;
+    color: #FFFFFF;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 30rem;
+}
+
+#date {
+    font-size: 7.5rem;
+    font-weight: 400;
+}
+
+#seconds {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 1.6rem;
+}
+
+.text {
+    position: absolute;
+    z-index: 1;
+    top: 56%;
+    text-align: center;
+    width: 30rem;
+}
+
+.text span {
+    color: #FF4655;
+}
+
+#test {
+    position: absolute;
+    z-index: 1;
+    top: 75%;
+    text-align: center;
+}
