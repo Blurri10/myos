@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     font-family: 'Tanker', sans-serif;
     color: #FFFFFF;
+    overflow: hidden;
 }
 
 main {
@@ -15,6 +16,7 @@ main {
     justify-content: center;
     align-items: center;
     background: linear-gradient(black -8%, transparent, transparent, black 122%);
+    overflow: hidden;
 }
 
 img {
@@ -22,6 +24,7 @@ img {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    overflow: hidden;
 }
 
 .container {
@@ -39,6 +42,7 @@ img {
     font-size: 7.5rem;
     font-weight: 400;
     padding-left: 0.5rem;
+    overflow: hidden;
 }
 
 #seconds {
@@ -46,6 +50,7 @@ img {
     font-weight: 400;
     padding-bottom: 1.6rem;
     width: 6.25rem;
+    overflow: hidden;
 }
 
 .text {
