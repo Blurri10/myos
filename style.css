@@ -6,63 +6,96 @@ html, body {
     overflow: hidden;
 }
 
+/*background image and main container*/
 main {
     width: 100%;
     height: 100vh;
     max-height: 100%;
-    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(black -8%, transparent, transparent, black 122%);
+    background: linear-gradient(black -8%, transparent, transparent, black 122%),
+                url("assets/wallpaper.png") center no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 
-img {
-    width: 100%;
+/*defining properties for sections*/
+.left, .right {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
     height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    overflow: hidden;
 }
 
-.container {
-    position: absolute;
-    z-index: 1;
+.left {
+    align-items: flex-start;
+}
+
+.right {
+    align-items: flex-end;
+}
+
+/*left section*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.left li {
+    margin: 1rem 0 0 1.25rem;
+    list-style: none;
+    font-size: 3rem;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.left li:hover {
+    a {
+        color: #FF4655;
+    }
+    transform: translate(2rem);
+}
+
+/*center section*/
+.timer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     width: 30rem;
+    font-weight: 400;
     overflow: hidden;
 }
 
 #date {
     font-size: 7.5rem;
-    font-weight: 400;
-    padding-left: 0.5rem;
+    padding-left: 0.4rem;
+    line-height: 6.7rem;
     overflow: hidden;
 }
 
 #seconds {
     font-size: 2rem;
-    font-weight: 400;
-    padding-bottom: 1.6rem;
     width: 6.25rem;
     overflow: hidden;
 }
 
 .text {
-    position: absolute;
-    z-index: 1;
-    top: 56%;
     text-align: center;
-    width: 30rem;
     overflow: hidden;
 }
 
 #month {
     color: #FF4655;
 }
+
+/*right section*/
+
 
