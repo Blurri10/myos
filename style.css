@@ -21,48 +21,6 @@ main {
     overflow: hidden;
 }
 
-/*defining properties for sections*/
-.left, .right {
-    flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    height: 100%;
-}
-
-.left {
-    align-items: flex-start;
-}
-
-.right {
-    align-items: flex-end;
-}
-
-/*left section*/
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-.left li {
-    margin: 1rem 0 0 1.25rem;
-    list-style: none;
-    font-size: 3rem;
-    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-a {
-    text-decoration: none;
-    color: #FFFFFF;
-    transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-}
-
-.left li:hover {
-    a {
-        color: #FF4655;
-    }
-    transform: translate(2rem);
-}
-
 /*center section*/
 .timer {
     display: flex;
@@ -95,7 +53,4 @@ a {
 #month {
     color: #FF4655;
 }
-
-/*right section*/
-
 
