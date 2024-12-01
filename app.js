@@ -20,13 +20,11 @@ setInterval(function () {
     let nextMonth = '';
     let year = today.getFullYear();
 
-    if (currentMonth <= 7) {
-        nextMonth = `0${currentMonth + 2}`;
-    } else if (currentMonth >= 8 && currentMonth <= 10) {
-        nextMonth = `${currentMonth + 2}`;
-    } else if (currentMonth === 11) {
+    if (currentMonth === 11) {
         nextMonth = `01`;
         year++;
+    } else {
+        nextMonth = (currentMonth + 2) < 10 ? `0${currentMonth + 2}` : `${currentMonth + 2}`;
     }
 
     const dueDate = new Date(`${year}-${nextMonth}-01T00:00:00`);
