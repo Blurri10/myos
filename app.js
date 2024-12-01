@@ -1,29 +1,31 @@
 const months = {
-    '01': 'december',
-    '02': 'january',
-    '03': 'february',
-    '04': 'march',
-    '05': 'april',
-    '06': 'may',
-    '07': 'june',
-    '08': 'july',
-    '09': 'august',
-    '10': 'september',
-    '11': 'october',
-    '12': 'november'
+    '01': 'january',
+    '02': 'february',
+    '03': 'march',
+    '04': 'april',
+    '05': 'may',
+    '06': 'june',
+    '07': 'july',
+    '08': 'august',
+    '09': 'september',
+    '10': 'october',
+    '11': 'november',
+    '12': 'december',
 }
 
 setInterval(function () {
 
     const today = new Date();
-    let nextMonth = today.getMonth() + 2;
-    let year  = today.getFullYear();
+    const currentMonth = today.getMonth();
+    let nextMonth = '';
+    let year = today.getFullYear();
 
-    if (nextMonth < 10) {
-        nextMonth = "0" + nextMonth;
-    }
-    else if (nextMonth === 13) {
-        nextMonth = 1;
+    if (currentMonth <= 7) {
+        nextMonth = `0${currentMonth + 2}`;
+    } else if (currentMonth >= 8 && currentMonth <= 10) {
+        nextMonth = `${currentMonth + 2}`;
+    } else if (currentMonth === 11) {
+        nextMonth = `01`;
         year++;
     }
 
